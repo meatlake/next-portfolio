@@ -44,7 +44,7 @@ const Weather = () => {
         <button
           type="submit"
           onClick={getWeather}
-          className="btn ml-4 text-sky-600"
+          className="btn btn-primary ml-4 text-white"
         >
           Zie het weer
         </button>
