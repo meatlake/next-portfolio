@@ -56,12 +56,15 @@ const Weather = () => {
               <h1 className="text-4xl font-bold text-sky-600">
                 {weatherData.name}
               </h1>
-              <h2 className="text-4xl font-semibold text-slate-600">
+              <h2 className="text-6xl font-semibold text-slate-600">
                 {Math.floor(weatherData.main.temp)}ºC
               </h2>
             </div>
             <div>
               <h3 className="text-2xl">{weatherData.weather[0].description}</h3>
+              <h3 className="mt-2 text-xl">
+                Voelt als: {Math.floor(weatherData.main.feels_like)}ºC
+              </h3>
             </div>
           </div>
           <div className="mt-4 bg-sky-600 rounded-lg px-4 py-2 text-white text-2xl font-semibold flex flex-col gap-4 max-w-80">
